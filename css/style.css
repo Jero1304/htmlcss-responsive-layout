@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+ul,
+ol,
+li,
+menu{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+:root{
+    --blue:#0084df;
+    --lightblue:#b5ddff;
+    --purple:#9792E4;
+    --dark:#333;
+    --yellow:#FDC15f;
+
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* HEADER */
+
+.main_header{
+    background-color: var(--blue);
+    padding: 20px 0 ;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space_between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_item{
+    color: white;
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.haburger{
+    display: none;
+}
+
+.logo{
+    padding-left:20px ;
+}
+
+/* COL*/
+.col-3{
+    flex-basis: calc(100%/3);
+    padding:10px 10px ;
+}
+
+.col-2{
+    flex-basis: calc(100% * (2/3));
+    padding:10px 10px ;
+}
+
+.col{
+    flex-basis: calc(100% /2);
+}
+
+
+/* BUTTON */
+
+.button{
+ border-radius:20px;
+ padding: 5px;
+ color: white;
+}
+
+.button_blue{
+    background-color: var(--blue);
+}
+
+/* HERO */
+.card{
+    background-color: var(--lightblue);
+    padding: 20px 20px 0 20px;
+    border-radius: 20px;
+}
+
+.hero .row{
+    padding-top: 20px;
+}
+
+.card  h3{
+    color: var(--blue);
+    font-size: 25px;
+}
+
+.card p{
+    padding: 20px 0 70px;
+}
+
+.col-3 .card{
+    text-align: center;
+}
+
+.col-3 i{
+    font-size: 70px;
+    color: var(--blue);
+}
+
+.col:last-child{
+    display: flex;
+}
+.phone_img{
+    flex-wrap: wrap;
+}
+
+
+
+/* MEDIA QUERY TABLET*/
+
+@media only screen and (max-width: 991px) {
+    .haburger{
+        display: block;
+        padding: 0 20px;
+        color: white;
+    }
+
+    .header_nav{
+        display: none;
+    }
+}
+
+/* MEDIA QUERY PHONE*/
+
+@media only screen and (max-width:576px) {
+    .hero .col-2{
+        flex-basis:calc(100%) ;
+    }
+
+    .hero .col-3{
+        flex-basis: calc(100%) ;
+    }
+}
