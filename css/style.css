@@ -32,6 +32,11 @@ a {
 	color: currentColor;
 }
 
+.button{
+    
+
+}
+
 /* CONTAINER */
 
 .container {
@@ -354,3 +359,69 @@ a {
     font-size: 20px;
 }
 
+@media only screen and (max-width:575px) {
+    .card__testimonial .row{
+        justify-content: center;      
+    }
+
+    .col-15{
+        padding: 0;
+    }
+
+    .col-11{
+        padding: 20px 0 0 0;
+    }
+
+    .card--name{
+        padding-bottom:20px ;
+    }
+}
+
+/* SECTION BENEFITS */
+.benefit--title{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 50px 0 40px 0;
+}
+
+.section--benefit{
+    background-color: var(--purple);
+    margin-top: 150px;
+}
+
+.card--benefit{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.card--benefit__number,
+.card--benefit__title{
+    color: var(--purple);
+    padding-bottom:30px ;
+}
+
+.card--benefit__number{
+    font-size: 70px;
+}
+
+.card--benefit__description {
+    color: gray;
+    padding-bottom: 30px;
+
+}
+.section--benefit .row{
+    padding: 40px;
+
+}
+
+.button__benefit{
+    font-size: 20px;
+    display: inline;
+    background-color: var(--purple);
+    border-radius: 30px;
+    padding: 10px 40px;
+    color: white;
+
+}
