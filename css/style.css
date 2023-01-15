@@ -127,6 +127,8 @@ a {
 	.header-nav {
 		display: none;
 	}
+
+
 }
 
 /* HERO */
@@ -209,6 +211,10 @@ a {
 	.card.card--hero.card--landscape .card__thumb img {
 		margin: 0;
 	}
+
+    .col-6{
+        flex-basis: 100%;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -289,6 +295,10 @@ a {
 
 /* SECTOIN TESTIMONIALS */
 
+.col-100{
+    flex-basis: 100%;
+}
+
 .testi__sub-title{
     padding-top: 60px;
     font-size: 20px;
@@ -353,6 +363,7 @@ a {
     flex-basis: 100%;
     padding: 30px 0 20px;
     font-size: 20px;
+    flex-wrap: nowrap;
 }
 .card.card--name{
     font-size: 20px;
